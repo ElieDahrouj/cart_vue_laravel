@@ -65,7 +65,7 @@ export default new Vuex.Store({
                 })
         },
         emptyCart({commit ,dispatch}){
-            axios.delete('/api/cart/')
+            axios.delete('/api/cart')
                 .then(() =>{
                     dispatch('productsInCart')
                 })
